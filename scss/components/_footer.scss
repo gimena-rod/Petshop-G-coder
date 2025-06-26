@@ -1,0 +1,56 @@
+/* estilo de la img del pie de pagina */
+.footer-img {
+    height: 150px;
+    width: 150px;
+}
+
+/* Estilo de color del footer */
+
+footer {
+    background-color: $color-terciario;
+    padding-top: 20px;
+    color: $color-cuarto;
+}
+
+/* texto en negrita */
+.txt-bold {
+    font-weight: bold;
+    color: $color-secundario;
+}
+
+
+footer{
+    .footer-container {
+        div{
+            display: inline-grid;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            margin-bottom: 80px;
+        
+        }
+    }
+}
+
+footer {
+    div {
+        height: 140px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+footer{
+    div{
+        img {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+} 
+    
+
+footer div ul{
+    list-style: none;
+    
+}

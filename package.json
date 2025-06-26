@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2--rodriguezgimenaf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimena-rod/Petshop-G-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gimena-rod/Petshop-G-coder/issues"
+  },
+  "homepage": "https://github.com/gimena-rod/Petshop-G-coder#readme"
+}
