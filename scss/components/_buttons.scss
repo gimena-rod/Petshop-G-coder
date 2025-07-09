@@ -1,0 +1,19 @@
+.btn-primary{
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+    &:hover{
+        background-color: $color-terciario;
+
+    }
+}
+
+.btn-secondary {
+    background-color: $color-terciario;
+    border-color: $color-terciario;
+    &:hover{
+        background-color: $color-quinto;
+        border-color: $color-quinto;
+        color: $color-terciario;
+
+    }
+}

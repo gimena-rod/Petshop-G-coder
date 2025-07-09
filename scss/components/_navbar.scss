@@ -1,0 +1,33 @@
+.navbar-brand {
+    img{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.navbar{
+    // background-color: $color-secundario;
+    background: linear-gradient(88deg,rgba(78, 92, 148, 1) 40%, rgba(209, 109, 121, 1) 78%);
+    color: $color-cuarto;
+}
+.bg-light-gray {
+    background-color: $color-cuarto;
+}
+
+.navbar-nav {
+    .nav-link, i {
+        color: rgb(255 255 255 / 72%);
+        
+        &.active{
+            color: rgb(255 131 131);
+        }
+        &:hover {
+            color: $color-quinto;
+
+        }
+    }
+    a i {
+        font-size: 25px;
+    }
+}
+    

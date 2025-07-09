@@ -1,0 +1,50 @@
+/* 
+ Estilo universal
+ Definicion del estilo base para no tener conflictos con distintos navegadores
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+}
+
+/* Estilos para el header */
+header {
+    background-color: $color-cuarto;
+    top: 0;
+}
+
+
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    margin: 10px;
+    color: $color-secundario;
+}
+
+.container-rs {
+    @media only screen and (min-width: 769px) { // estilos para pantalla mas grandes como notebook
+        margin: 25px 0px;
+        display: flex;
+        grid-gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }        
+    @media only screen and (max-width: 769px) { // estilos para celulares y tablets
+        margin: 25px 0px;
+        display: flex;
+        grid-gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+}

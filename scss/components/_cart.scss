@@ -1,0 +1,54 @@
+.cart-img {
+    @include img-size(100px, auto)
+}
+
+.section-cart {
+    @include section-style;
+    article {
+        overflow-x:auto;
+    }
+}
+
+table {
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    tr, th {
+        padding: 15px 10px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.4;
+        color: $color-secundario;
+        vertical-align: middle;
+        border: none;
+        &:last-child td {
+            text-align: end;
+        }
+    }
+
+    tbody {
+            height: 20px;
+            width: 20px;
+            margin: auto 10px;
+            text-decoration: none;
+            font-style: none;
+            cursor: pointer;
+                tr {
+                    margin: 10px;
+                    border-bottom: 1px solid $color-quinto;
+                }
+
+    }
+} 
+
+.btn-delete {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}

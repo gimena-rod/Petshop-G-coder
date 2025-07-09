@@ -3,79 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"/>
     <!-- Link de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
     <!--Css-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Pet Shop G</title>
   </head>
   <body>
       <!--Cabezera-->
-      <nav class="navbar sticky-top navbar-expand-lg bg-light-gray shadow">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img src="./img/logo sf.png" alt="Petshop G"/></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+    <header>
+      <section>
+      <!-- seccion para el carrusel -->
+        <img class="wrapper-img" src="./img/carrusel 1.jpg" alt="mascotas" />
+      </section>
+    </header>
+      <nav class="navbar fixed-top navbar-expand-lg bg-light-gray shadow">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="./img/logo g.png" alt="Petshop G"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./pages/contacto.html"
-                  >Contacto</a>
+                <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/quienes-somos.html"
-                  >Quienes Somos</a>
+                <a class="nav-link" href="./pages/quienes-somos.html">Quienes Somos</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">Productos
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Gatos</a></li>
                   <li><a class="dropdown-item" href="#">Perros</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li><hr class="dropdown-divider"/></li>
                   <li>
-                    <a class="dropdown-item" href="./pages/productos.html"
-                      >Ver todos los productos</a>
+                    <a class="dropdown-item" href="./pages/productos.html">Ver todos los productos</a>
                   </li>
                 </ul>
               </li>
             </ul>
-
             <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="Buscar"
-                name="search-navbar"
-                placeholder="Buscar"
-                aria-label="Search"/>
+              <input class="form-control me-2" type="Buscar" name="search-navbar" placeholder="Buscar" aria-label="Search"/>
               <button class="btn btn-primary" type="submit">
                 Buscar
               </button>
             </form>
-            <ul class="nav">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
+                    <a class="nav-link" href="./pages/cart.html"><i class="bi bi-cart2"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/registro.html"><i class="bi bi-person"></i></a>
@@ -85,12 +67,7 @@
         </div>
       </nav>
 <!-- El navbar queda afuera del header pq no reconocia el sticky-top  -->
-    <header>
-          <section>
-          <!-- seccion para el carrusel -->
-          <img class="wrapper-img" src="./img/carrusel 1.jpg" alt="mascotas" />
-        </section>
-    </header>
+
 
     <!--Contenido principal-->
     <main class="container text-center">
@@ -103,10 +80,12 @@
             <h5>Collares</h5>
           </div>
           <div>
-            <img class="pill-img" src="./img/clothes.png" alt="Ropas" /><h5>Ropas</h5>
+            <img class="pill-img" src="./img/clothes.png" alt="Ropas" />
+            <h5>Ropas</h5>
           </div>
           <div>
-            <img class="pill-img" src="./img/leash.png" alt="Correas" /><h5>Correas</h5>
+            <img class="pill-img" src="./img/leash.png" alt="Correas" />
+            <h5>Correas</h5>
           </div>
           <div>
             <img class="pill-img" src="./img/leash (1).png" alt="Pecheras" /><h5>Pecheras</h5>
@@ -120,14 +99,14 @@
         </article>
       </section>
 
-      <section class="row">
+      <section class="row container-fluid">
         <!--Sección para los productos destacados-->
         <h2>Destacados</h2>
         <article class="card col-3 card-product">
             <img class="card-img" src="./img/abrigo.jpg" alt="Abrigo"/>
             <div class="card-body">
                 <h5 class="card-title">Abrigo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Abrigo con mangas y capucha, disponible desde el talle 1 al 4</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
@@ -135,21 +114,21 @@
             <img class="card-img" src="./img/abrigo 3.jpg" alt="Abrigo"/>
             <div class="card-body">
                 <h5 class="card-title">Abrigo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Abrigo tejido con mangas, disponible del talle 2 al 5</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article><article class="card col-3 card-product">
             <img class="card-img" src="./img/pretal 2.jpg" alt="Abrigo"/>
             <div class="card-body">
                 <h5 class="card-title">Pretal</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Pretal regulable desde el talle 5 al 7</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article><article class="card col-3 card-product">
             <img class="card-img" src="./img/jueguete perro 1.jpg" alt="Abrigo"/>
             <div class="card-body">
                 <h5 class="card-title">Juguete</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Juguetes de animales</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
@@ -157,15 +136,15 @@
           <img class="card-img" src="./img/collar con pañuelo.jpg" alt="collar con pañuelo"/>
           <div class="card-body">
                 <h5 class="card-title">Collar con pañuelo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Collar con pañuelo chico, ideal para gatos</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
         <article class="card col-3 card-product">
           <img class="card-img" src="./img/identificadores.jpg" alt="identificadores"/>
           <div class="card-body">
-                <h5 class="card-title">identificadores</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h5 class="card-title">Identificadores</h5>
+                <p class="card-text">Identificadores de resina personalizados</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
@@ -173,7 +152,7 @@
           <img class="card-img" src="./img/pretal.jpg" alt="Pretal" />
           <div class="card-body">
                 <h5 class="card-title">Pretal</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Pretal regulable del talle 4 al 6.</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
@@ -181,7 +160,7 @@
           <img class="card-img" src="./img/juguete perro.jpg" alt="Juguetes" />
           <div class="card-body">
                 <h5 class="card-title">Juguetes</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-text">Juguetes para cachorros.</p>
                 <button href="#" class="btn btn-primary">Agregar al Carrito</button>
             </div>
         </article>
@@ -193,7 +172,7 @@
     <footer>
       <!--Pie de pagina-->
       <div>
-        <img src="./img/logo sf.png" alt="Petshop G" />
+        <img src="./img/logo g.png" alt="Petshop G" />
       </div>
       <nav class="footer-container">
         <div>
@@ -241,10 +220,6 @@
         </div>
       </nav>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
