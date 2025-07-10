@@ -23,6 +23,10 @@ header {
   justify-content: center;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5 {
   text-align: center;
   margin: 10px;
@@ -71,12 +75,12 @@ h1, h2, h3, h4, h5 {
 estilo de imagen en los cards
 */
 .card {
-  width: 18em;
+  width: 100%;
   border-color: #D16D79;
 }
 .card.card-product {
-  margin: 10px 21px;
-  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px;
 }
 .card:hover {
   border-color: #4E5C94;
@@ -227,6 +231,7 @@ table tbody tr {
 
 header {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .navbar-brand img {
@@ -285,8 +290,9 @@ header {
   box-shadow: 0px 5px 7px rgba(184, 192, 227, 0.6196078431);
   margin: 10px 0;
 }
-.category-index article div h5 {
+.category-index article div p {
   color: #4E5C94;
+  text-align: center;
 }
 
 /* 
@@ -300,6 +306,26 @@ header {
 
 main section > h2 {
   color: #4E5C94;
+}
+
+.header-wrapper {
+  position: relative;
+  height: 40em;
+  background-image: linear-gradient(to right, rgba(45, 45, 45, 0.7), rgba(73, 73, 73, 0.268)), url("/img/carrusel 1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-wrapper div h1 {
+  font-size: 45px;
+  color: #ECECEE;
+}
+.header-wrapper div p {
+  color: #ECECEE;
+  font-size: 25px;
 }
 
 /* Estilo para las tarjetas */
@@ -340,6 +366,12 @@ main section > h2 {
 }
 
 /* Estilos para grid  */
+.section-grid article p {
+  text-align: justify;
+}
+.section-grid h2 {
+  margin: 20px 0;
+}
 @media only screen and (min-width: 1300px) {
   .section-grid {
     padding: 20px;
@@ -366,6 +398,12 @@ main section > h2 {
   .section-grid .img-qs {
     height: 100%;
     width: 100%;
+  }
+  .section-grid article {
+    margin: 50px 0;
+  }
+  .section-grid article p {
+    text-align: justify;
   }
 }
 
