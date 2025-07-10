@@ -1,129 +1,163 @@
 .category-index {
-    margin-bottom: 40px;
-    width: 100%;
-    overflow: auto;
-    p{
-        color: $color-principal;
-    }
-    h2 {
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: auto;
+  p {
+    color: $color-principal;
+  }
+  h2 {
     text-align: center;
     margin: 30px;
     padding: 10px;
-
-    }
-    article{
+  }
+  article {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-        a {
-            display: block;
-            text-align: center;
-            justify-content: space-between;
-        }
-        div{
-            border-radius: 100%;
-            padding: 30px;
-            box-shadow: 0px 5px 7px $color-quinto;
-            margin: 10px 0;
-            
-            h5{
-                color: $color-terciario;
-            }
-        }
+    a {
+      display: block;
+      text-align: center;
+      justify-content: space-between;
     }
-}
+    div {
+      border-radius: 100%;
+      padding: 30px;
+      box-shadow: 0px 5px 7px $color-quinto;
+      margin: 10px 0;
 
+      p {
+        color: $color-terciario;
+        text-align: center;
+      }
+    }
+  }
+}
 
 /* 
     estilo para pildora de imagen
 */
 .pill-img {
-    height: 80px;
-    width: 80px;
-    margin: 0px 15px;    
+  height: 80px;
+  width: 80px;
+  margin: 0px 15px;
 }
 
-main{
-    section {
-        &>h2 {
-            color: $color-terciario;
-
-        }
+main {
+  section {
+    & > h2 {
+      color: $color-terciario;
     }
+  }
 }
 
+.header-wrapper {
+  position: relative;
+  height: 40em;
+  background-image: linear-gradient(
+      to right,
+      rgba(45, 45, 45, 0.7),
+      rgba(73, 73, 73, 0.268)
+    ),
+    url("/img/carrusel\ 1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    h1 {
+      font-size: 45px;
+      color: $color-cuarto;
+    }
+
+    p {
+      color: $color-cuarto;
+      font-size: 25px;
+    }
+  }
+}
 
 /* Estilo para las tarjetas */
 .destacados {
-    section {
-        article{
-            width: 250px;
-            height: 350px;
-            border: 1px solid $color-principal;
-            border-radius: 20px;
-            margin: 20px;
-            text-align: center;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 10px;
-            background-color: #083147;
-            color: #f5f2f2;
-            padding: 5px;
-            margin: 5px;
-        }
+  section {
+    article {
+      width: 250px;
+      height: 350px;
+      border: 1px solid $color-principal;
+      border-radius: 20px;
+      margin: 20px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 10px;
+      background-color: #083147;
+      color: #f5f2f2;
+      padding: 5px;
+      margin: 5px;
     }
+  }
 }
-
 
 /* Estilos para el icono de whatsapp */
 .whatsapp {
-    img{
-        @media only screen and (min-width: 426px) {
-            @include wpp-size(60px, 60px, 20px, 20px)
-        }
+  img {
+    @media only screen and (min-width: 426px) {
+      @include wpp-size(60px, 60px, 20px, 20px);
+    }
 
-        @media only screen and (max-width: 426px) {
-            @include wpp-size(40px, 40px, 20px, 20px)
-        }
-    } 
+    @media only screen and (max-width: 426px) {
+      @include wpp-size(40px, 40px, 20px, 20px);
+    }
+  }
 }
 
 /* Estilos para grid  */
-.section-grid{
-    @media only screen and (min-width: 1300px) {
-        padding: 20px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        grid-auto-rows: minmax(100px, auto);
-        justify-items: center;
-
-        .img-qs{
-            @include img-size(350px, auto)
-        }
-
-        article{
-            &:first-child{
-               grid-column: span 2;
-            }
+.section-grid {
+    article {
+        p {
+            text-align: justify;
         }
     }
-
-    @media only screen and (max-width: 600px) {
-        padding: 20px;
-        width: 100%;
-        .img-qs{
-            @include img-size(100%, 100%)
-    
-        }
+    h2 {
+        margin: 20px 0;
     }
+  @media only screen and (min-width: 1300px) {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+
+    .img-qs {
+      @include img-size(350px, auto);
+    }
+
+    article {
+      &:first-child {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+    width: 100%;
+    .img-qs {
+      @include img-size(100%, 100%);
+    }
+    article {
+      margin: 50px 0;
+      p {
+        text-align: justify;
+      }
+    }
+  }
 }
 
 .text-contact {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
-
-
-
